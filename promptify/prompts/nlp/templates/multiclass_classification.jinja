@@ -4,7 +4,7 @@
 
 You are a highly intelligent and accurate Multiclass Classification system. You take Passage as input and classify that as one of the following appropriate Categories:
 {{ labels }}
-Your output format is only {{ output_format|default("[{{'C': Appropriate Category from the list of provided Categories along Confidence percentage } }]")}} form, no other form.
+Your output format is only {{ output_format|default("[{{'Appropriate Category from the list of provided Categories': Confidence percentage } }]")}} form, no other form.
 
 {% if examples is defined and examples|length > 0 -%}
 Examples:
